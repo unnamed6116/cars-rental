@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- seo tags -->
+    <meta
+      name="description"
+      content="Fic Cars Поръчйте автомобил още сега! Можете да се свържете с нас на тел: 0123456789."
+    />
+    <meta
+      name="keywords"
+      content="fic cars, коли под наем, автомобили под наем, коли, автомобили"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/styles/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>Fic Cars | Наеми кола</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-black py-4">
+        <div class="container">
+          <a class="text-white navbar-brand fs-2 logo" href="/cars-rental/">
+            <span>CARS</span>
+            <span class="text-primary font-weight-bold">RENTAL</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 px-5">
+              <li class="nav-item">
+                <a
+                  class="text-white nav-link"
+                  aria-current="page"
+                  href="/cars-rental/about-us.html"
+                  title="За нас"
+                >
+                  За нас
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-white nav-link"
+                  aria-current="page"
+                  href="/cars-rental/contact-us.html"
+                  title="Контакти"
+                >
+                  Контакти
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="text-white nav-link active text-primary"
+                  aria-current="page"
+                  href="/cars-rental/rental-a-car.html"
+                  title="Наеми кола"
+                >
+                  Наеми кола
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 fs-5 px-5">
+              <li class="nav-item dropdown">
+                <a
+                  class="text-white nav-link dropdown-toggle"
+                  href="/cars-rental#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Автомобили
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/cars-rental/cars.html#bmw" class="dropdown-item">BMW</a>
+                  </li>
+                  <li>
+                    <a href="/cars.html#mercedes" class="dropdown-item"
+                      >Mercedes</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/cars-rental/cars.html#audi" class="dropdown-item">Audi</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="h-100 car-a-rental">
+      <h1 class="text-white py-4 text-center">Наеми кола</h1>
+      <div class="container">
+        <div class="bg-white p-5 rounded shadow">
+          <form method="post">
+            <p class="fs-4 text-muted">Детайли за автомобила</p>
+            <hr>
+            <div class="row fs-5">
+              <div class="mb-3 col-md-6">
+                <label for="date_get" class="fs-5 form-label">Дата на пзимане</label>
+                <input type="date" class="fs-5 form-control" name="date_get" />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="date_return" class="fs-5 form-label">
+                  Дата на връщане
+                </label>
+                <input
+                  type="date"
+                  class="fs-5 form-control"
+                  name="date_return"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="city" class="fs-5 form-label">
+                  Взимане от град
+                </label>
+                <select name="city" id="city" class="fs-5 form-select">
+                  <option value="sofia">София</option>
+                  <option value="plovdiv">Пловдив</option>
+                  <option value="varna">Варна</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="city" class="fs-5 form-label"> Автомобил </label>
+                <select name="city" id="city" class="fs-5 form-select">
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+            <p class="fs-4 text-muted">Детайли за Наемателя</p>
+            <hr>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <label for="first_name" class="fs-5 form-label">Име</label>
+                    <input type="text" class="fs-5 form-control" name="first_name" id="first_name">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <label for="last_name" class="fs-5 form-label">Фамилия</label>
+                    <input type="text" class="fs-5 form-control" name="last_name" id="last_name">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <label for="address" class="fs-5 form-label">Адрес</label>
+                    <input type="text" class="fs-5 form-control" name="address" id="address">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <label for="email" class="fs-5 form-label">Имейл адрес</label>
+                    <input type="email" class="fs-5 form-control" name="email" id="email">
+                </div>
+            </div>
+            <button type="reset" class="fs-4 btn btn-primary">Изпрати</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <div class="bg-dark text-white py-4 fs-5">
+        &copy; 2023 Всички права запазени. Направено от: Мариян Коцев и Ростислав Петков
+      </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
